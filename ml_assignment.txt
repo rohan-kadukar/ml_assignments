@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 iris = pd.read_csv("Iris1.csv") 
 iris.head()
 iris.plot(kind="scatter", x="SepalLengthCm", y="SepalWidthCm")
+
+
 Assnmt 2: Write a python program the Categorical values in numeric format for a given dataset.
 # importing pandas as pd
 import pandas as pd
@@ -24,6 +26,8 @@ df.drop("Purchased", axis=1, inplace=True)
 df["Purchased"] = label
 # printing Dataframe
 df
+
+
 Assnmt 3: Write a python program to implement simple Linear Regression for predicting salary.
 import numpy as np
 import matplotlib.pyplot as plt
@@ -43,6 +47,8 @@ plt.title('Salary vs Experience (Training set)')
 plt.xlabel('Years of Experience')
 plt.ylabel('Salary')
 plt.show()
+
+
 Assnmt 4: Write a python program to implement Polynomial Regression for given dataset.
 import numpy as np
 import matplotlib.pyplot as plt
@@ -65,6 +71,8 @@ plt.xlabel('Position level')
 plt.ylabel('Salary')
 plt.show()
 lin_reg_2.predict(poly_reg.fit_transform([[6.5]]))
+
+
 Assnmt 5: Write a python program to Implement Naïve Bayes.-No need of dataset
 from sklearn.datasets import load iris
 iris = load_iris()
@@ -79,6 +87,8 @@ gnb.fit(X_train, y_train)
 y_pred = gnb.predict(X_test)
 from sklearn import metrics
 print("Gaussian Naive Bayes model accuracy(in %):", metrics.accuracy_score(y_test, y_pred)*100)
+
+
 Assnmt 6: Write a python program to implement linear SVM.Datset-Iris1.csv
 import numpy as np
 import matplotlib.pyplot as plt
@@ -104,6 +114,8 @@ plt.ylabel('Sepal width')
 plt.xlim(xx.min(), xx.max())
 plt.title('SVC with linear kernel')
 plt.show()
+
+
 Assnmt 7:Write a python program to Implement Decision Tree for a dataset.-Iris1.csv
 # Python program to implement decision tree algorithm and plot the tree 
 import pandas as pd 
@@ -134,6 +146,8 @@ Tree = tree.plot_tree(dtc, feature_names = names_features, class_names = target_
 True, filled = True, fontsize = 14) 
 plt.show() 
 y_pred = dtc.predict(x_test) 
+
+
 Assnmt 8: Write a python program to implement Agglomerative clustering on a dataset.
 import numpy as nm 
 import matplotlib.pyplot as mtp 
